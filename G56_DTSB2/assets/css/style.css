@@ -6,10 +6,10 @@
 html {
     scroll-behavior: smooth;
 }
-.container {
-    max-width: 1170px;
-    padding: 0 15px;
-    margin: 0 auto;
+header .container {
+    width: 100%;
+    margin: 0;
+    padding: 0 0 0 30px;
   }
 body {
     margin: 0;
@@ -20,7 +20,11 @@ body {
     background: #e8f5e9;
     color: #424242;
 }
-  
+#top .container {
+    max-width: 1170px;
+    padding: 0 15px;
+    margin: 0 auto;
+  }
 header {
     height: 65px;
     width: 100%;
@@ -39,7 +43,6 @@ header {
 }
 .header-right {
     float: right;
-    margin-right: -25px;
 }
 .header-right a {
     line-height: 65px;
@@ -55,18 +58,39 @@ header {
 }
 #top{
     padding: 100px 0 100px 0;
-    background-image: url(../img/banner.jpg);
+    background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
     background-size: cover;
     height: 100vh;
     color: white;
-    text-align: center;
+    text-align: left;
 }
 #top h1{
     font-size: 50px;
 }
 .team{
-    margin: 30vh 0 0 -5vw;
+    margin: 20vh 0 0 -5vw;
 }
 .team p{
     font-size: 2em;
+}
+a {
+    font-weight: bold;
+    text-decoration: none;
+}
+.btn {
+    padding: 12px 24px;
+    color: white;
+    display: inline-block;
+    opacity: 0.8;
+    border-radius: 4px;
+    text-align: center;
+    
+}
+.detail{
+    background-color: #FF5722;
+    border-radius: 10px;
+}
+.detail:hover{
+    background-color: #dd3500;
+    cursor: pointer;
 }
