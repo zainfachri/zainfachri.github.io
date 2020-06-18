@@ -102,7 +102,7 @@ a {
 }
 .poster img{
     position: fixed;
-    width: 600px;
+    width: 650px;
     transition: width 1s;
 }
 .poster img:hover{
