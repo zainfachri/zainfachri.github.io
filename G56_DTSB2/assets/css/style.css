@@ -19,7 +19,6 @@ body {
     font-size: 14px;
     line-height: 1.618em;
     background: #e8f5e9;
-    color: #424242;
 }
 .clear{
     clear: left;
@@ -38,12 +37,15 @@ header {
 }
 .header-left {
     float: left;
+    margin-left: 2em;
+    font-size: 1.2em;
     color: white;
 }
 .header-right {
     float: right;
 }
 .header-right a {
+    font-size: 15px;
     line-height: 65px;
     padding: 0 25px;
     color: white;
@@ -54,11 +56,14 @@ header {
 .header-right a:hover {
     background-color: rgba(255, 255, 255, 0.3);
 }
+.menu-icon{
+    display: none !important;
+}
 #top{
     padding: 100px 0 100px 0;
     background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
     background-size: cover;
-    height: 100vh;
+    height: 110vh;
     color: white;
     text-align: left;
 }
@@ -88,44 +93,204 @@ a {
 .detail{
     background-color: #FF5722;
     border-radius: 10px;
+    border: 1px solid #FF5722;
 }
 .detail:hover{
     transition: all 0.5s;
     background-color: #fff;
     color: #FF5722;
-    border: 1px solid #FF5722;
     cursor: pointer;
 }
 .poster{
-    margin-left: 13em;
-    display: inline;
+    margin-top: 3%;
+    margin-right: 10%;
+    margin-left: 13vw;
+    position: absolute;
+    display: inline-block;
 }
 .poster img{
-    position: fixed;
-    width: 650px;
+    width: 44vw;
     transition: width 1s;
 }
 .poster img:hover{
-    position: fixed;
-    width: 700px;
+    width: 45vw;
     
 }
 .tech {
     animation: float 3s ease-out infinite;
-  }
-  
-  @keyframes float {
+}
+.mid{
+    width: 1000px;
+    margin: 10vh auto;
+}
+.mid h1{
+    text-align: center;
+    color: #424242;
+    margin-bottom: 40px;
+}
+.mid .container {
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.mid .container .card {
+    position: relative;
+    border-radius: 10px;
+}
+
+.mid .container .card .icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #f00;
+    transition: 0.7s;
+    /* box-shadow: inset -7px 9px 5px 1px rgba(0,0,0,0.25); */
+    z-index: 1;
+}
+
+.mid .container .card:nth-child(1) .icon {
+    background: #d1422e;
+}
+
+.mid .container .card:nth-child(2) .icon {
+    background: #3185b9;
+}
+
+.mid .container .card:nth-child(3) .icon {
+    background: #dabc2d;
+}
+.mid .container .card .icon .fa {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 80px;
+    transition: 0.7s;
+    color: #fff;
+}
+
+.mid i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 80px;
+    transition: 0.7s;
+    color: #fff;
+    text-shadow: 0px 5px 4px rgba(0,0,0,0.53);
+}
+.mid i:hover{
+    font-size: 90px;
+}
+
+.mid .container .card .face {
+    width: 300px;
+    height: 200px;
+    transition: 0.5s;
+}
+
+.mid .container .card .face.face1 {
+    position: relative;
+    background: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.mid .container .card:hover .face.face1{
+    background: #ff0057;
+    transform: translateY(0px);
+}
+
+.mid .container .card .face.face1 .content {
+    opacity: 1;
+    transition: 0.5s;
+}
+
+.mid .container .card:hover .face.face1 .content {
+    opacity: 1;
+}
+
+.mid .container .card .face.face1 .content i{
+    max-width: 100px;
+}
+
+.mid .container .card .face.face2 {
+    position: relative;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 2px 2px 2px rgba(0, 0, 0, .05);
+    border-radius: 0 0 10px 10px;
+    transform: translateY(-200px);
+}
+
+.mid .container .card:hover .face.face2{
+    transform: translateY(0);
+}
+
+.mid .container .card .face.face2 .content p {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: #414141;
+}
+
+.mid .container .card .face.face2 .content h3 {
+    margin: 0 0 10px 0;
+    padding: 0;
+    color: #fff;
+    font-size: 24px;
+    text-align: center;
+    color: #414141;
+} 
+
+.mid .container a {
+    text-decoration: none;
+    color: #414141;
+}  
+@keyframes float {
     50% {
        transform: translate(0, 20px);
     }
   }
+  footer {
+    background: #353a40;
+    color: #fff;
+    text-align: center;
+    line-height: 0;
+  }
+  
+  footer .container {
+    width: 100%;
+    margin: 0;
+    padding: 5px 30px;
+    line-height: 1.618em;
+  }
+  
+  footer a {
+    color: #fff;
+  }
+  
+  footer a:hover {
+    color: #FF5722;
+  }
+
 @media all and (max-width: 1000px){
     .poster{
         display: none;
         }
     .team{
         display: block;
-        margin: 10vh 20vw;
+        margin: 23vh 20vw;
         }
     .team h1, .team p{
         text-align: center;
@@ -137,11 +302,33 @@ a {
     .team p{
         font-size: 1.5em;
     }
+    .mid{
+        width: 100%;
+        margin: 10vh auto;
+    }
+    .mid .container .card .face {
+        width: 32vw;
+    }
+    .mid .container .card .face.face2 {
+        transform: none;
+    }
+    .mid .container{
+        margin-left: 2vw;
+    }
+    .mid .container .card .face.face1 {
+        width: 95%;
+    }
+    .mid .container .card .face.face2 {
+        width: 95%;
+    }
+    .mid .container .card {
+        width: 95%;
+    }
 }
 @media all and (max-width: 670px){
     .poster{
         display: none;
-        }
+    }
     .header-right{
         display: none;
     }
@@ -155,5 +342,17 @@ a {
     .team{
         display: inline;
         margin: 10vh 20vw;
-        }
+    }
+    .mid .container{
+        display: inline;
+    }
+    .mid .container .card .face.face1 {
+        width: 95%;
+    }
+    .mid .container .card .face.face2 {
+        width: 95%;
+    }
+    .mid .container .card {
+        margin: 0 0 25px 5vw;
+    }
 }
