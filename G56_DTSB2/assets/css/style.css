@@ -15,7 +15,7 @@ header .container {
 body {
     margin: 0;
     padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "lato";
     font-size: 14px;
     line-height: 1.618em;
     background: #e8f5e9;
@@ -82,7 +82,7 @@ a {
     text-decoration: none;
 }
 .btn {
-    padding: 12px 24px;
+    padding: 12px 50px;
     color: white;
     display: inline-block;
     opacity: 0.8;
@@ -102,7 +102,7 @@ a {
     cursor: pointer;
 }
 .poster{
-    margin-top: 3%;
+    margin-top: 2%;
     margin-right: 10%;
     margin-left: 13vw;
     position: absolute;
@@ -113,7 +113,7 @@ a {
     transition: width 1s;
 }
 .poster img:hover{
-    width: 45vw;
+    width: 46vw;
     
 }
 .tech {
@@ -124,9 +124,13 @@ a {
     margin: 10vh auto;
 }
 .mid h1{
+    border-bottom: 3px solid #aeaeae2b;
+    font-size: 30px;
+    font-weight: 1000;
     text-transform: uppercase;
     text-align: center;
     color: #424242;
+    padding-bottom: 15px;
 }
 .mid .desc{
     text-align: center;
@@ -315,6 +319,7 @@ a {
     .mid h1{
         width: 100%;
         padding: 0 10px;
+        padding-bottom: 15px;
         font-size: 1.9em;
     }
     .mid .desc{
@@ -362,8 +367,10 @@ a {
     }
     .mid h1{
         width: 100%;
-        padding: 0 10px;
-        font-size: 1.5em;
+        padding: 0 20px;
+        padding-bottom: 15px;
+        line-height: normal;
+        font-size: 2em;
     }
     .mid .desc{
         width: 100%;
