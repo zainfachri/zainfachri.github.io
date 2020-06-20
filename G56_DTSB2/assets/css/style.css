@@ -124,12 +124,18 @@ a {
     margin: 10vh auto;
 }
 .mid h1{
+    text-transform: uppercase;
     text-align: center;
     color: #424242;
-    margin-bottom: 40px;
+}
+.mid .desc{
+    text-align: center;
+    color: #727272;
+    line-height: 8px;
+    font-size: 1.3em;
 }
 .mid .container {
-    margin: 0 auto;
+    margin: 50px auto;
     position: relative;
     display: flex;
     justify-content: space-between;
@@ -306,6 +312,17 @@ a {
         width: 100%;
         margin: 10vh auto;
     }
+    .mid h1{
+        width: 100%;
+        padding: 0 10px;
+        font-size: 1.9em;
+    }
+    .mid .desc{
+        width: 100%;
+        padding: 0 10px;
+        line-height: normal;
+        font-size: 1.6em;
+    }
     .mid .container .card .face {
         width: 32vw;
     }
@@ -342,6 +359,17 @@ a {
     .team{
         display: inline;
         margin: 10vh 20vw;
+    }
+    .mid h1{
+        width: 100%;
+        padding: 0 10px;
+        font-size: 1.5em;
+    }
+    .mid .desc{
+        width: 100%;
+        padding: 0 10px;
+        line-height: normal;
+        font-size: 1.4em;
     }
     .mid .container{
         display: inline;
