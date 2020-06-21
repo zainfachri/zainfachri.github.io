@@ -468,10 +468,17 @@ form{
     }
 }
 @media all and (max-width: 670px){
+    .menu-icon{
+        color: white;
+        float: right;
+        font-size: 25px !important;
+        padding: 21px 50px;
+        display: block !important;
+    }
     .poster{
         display: none;
     }
-    .header-right{
+    .header-right, .header-left{
         display: none;
     }
     .team h1{
