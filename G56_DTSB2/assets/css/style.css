@@ -124,13 +124,17 @@ a {
     margin: 10vh auto;
 }
 .mid h1{
-    border-bottom: 3px solid #aeaeae2b;
     font-size: 30px;
     font-weight: 1000;
     text-transform: uppercase;
     text-align: center;
     color: #424242;
-    padding-bottom: 15px;
+}
+.mid hr{
+    width: 80%;
+    margin-bottom: 20px;
+    border: 3px solid #aeaeae2b;
+    border-radius: 6px;
 }
 .mid .desc{
     text-align: center;
@@ -266,7 +270,123 @@ a {
 .mid .container a {
     text-decoration: none;
     color: #414141;
-}  
+} 
+.about{
+    padding: 50px 100px;
+    background-color: #353a40;
+}
+.about h1{
+    font-size: 30px;
+    font-weight: 1000;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fafafa;
+}
+.about hr{
+    width: 20%;
+    margin-bottom: 20px;
+    border: 2px solid #fafafa;
+    border-radius: 6px;
+}
+.about-card{
+    width: 75%;
+    margin: 0 auto;
+}
+.card-container h3 {
+	margin: 10px 0;
+}
+
+.card-container h4 {
+	margin: 5px 0;
+    text-transform: uppercase;
+    color: #FF5722;
+    font-weight: 900;
+}
+
+.card-container p {
+    font-style: italic;
+	font-size: 14px;
+	line-height: 21px;
+}
+
+.card-container {
+    display: inline-block;
+    margin: 10px 10px;
+	background-color: #fafafa;
+	border-radius: 5px;
+	box-shadow: 0px 10px 20px -10px rgba(0,0,0,0.75);
+	color: #353a40;
+    padding: 30px;
+	position: relative;
+	width: 300px;
+	max-width: 100%;
+	text-align: center;
+}
+
+.card-container .round {
+	border: 1px solid #d1422e;
+	border-radius: 50%;
+    padding: 7px;
+    filter: drop-shadow(2px 2px 2px gray) sepia(100%);
+    transition: 0.5s;
+}
+
+.card-container .round:hover {
+    filter: drop-shadow(2px 2px 2px gray);
+}
+button.primary {
+    border-radius: 3px;
+    cursor: pointer;
+	font-weight: 500;
+	
+}
+button.primary.click {
+    padding: 10px 25px;
+    background-color: #383838;
+    border: 1px solid #383838;
+    box-shadow: 0 7px #202020;
+	color: #fafafa;
+}
+button.primary.click:active {
+    position: relative;
+    top: 7px;
+    box-shadow: none;
+}
+button.primary.ghost {
+    padding: 10px 15px;
+    background-color: #3185b9;
+    border: 1px solid #3185b9;
+	box-shadow: 0 7px #28678f;
+	color: #fafafa;
+}
+button.primary.ghost:active {
+    position: relative;
+    top: 7px;
+    box-shadow: none;
+}
+.ghost i{
+    font-size: 1em;
+}
+form{
+    display: inline-block;
+}
+.organizer{
+        width: 100%;
+        margin: 10vh auto;
+}
+.organizer h1{
+    font-size: 30px;
+    font-weight: 1000;
+    text-transform: uppercase;
+    text-align: center;
+    color: #424242;
+}
+.organizer hr{
+    width: 30%;
+    margin-bottom: 20px;
+    border: 3px solid #aeaeae2b;
+    border-radius: 6px;
+}
 @keyframes float {
     50% {
        transform: translate(0, 20px);
