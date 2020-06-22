@@ -18,7 +18,7 @@ body {
     font-family: "lato";
     font-size: 14px;
     line-height: 1.618em;
-    background: #fafafa;
+    background: #e5f6f8;
 }
 .clear{
     clear: left;
@@ -59,13 +59,14 @@ header {
 .menu-icon{
     display: none !important;
 }
-#top{
+.top{
     padding: 100px 0 100px 0;
     background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
     background-size: cover;
     height: 110vh;
     color: white;
     text-align: left;
+    border-bottom: 20px solid #FF5722;
 }
 .team h1{
     font-size: 50px;
@@ -85,7 +86,6 @@ a {
     padding: 12px 50px;
     color: white;
     display: inline-block;
-    opacity: 0.8;
     border-radius: 4px;
     text-align: center;
     
@@ -138,7 +138,7 @@ a {
 }
 .mid .desc{
     text-align: center;
-    color: #727272;
+    color: #424242;
     line-height: 8px;
     font-size: 1.3em;
 }
@@ -272,8 +272,18 @@ a {
     color: #414141;
 } 
 .about{
-    padding: 50px 100px;
+    border-top: 20px solid #FF5722;
+    border-bottom: 20px solid #FF5722;
+    width: 100%;
+    padding: 50px 0;
     background-color: #353a40;
+}
+.member{
+    width: 970px;
+    margin: 0 auto;
+}
+.card-container:nth-child(4){
+    margin-left: 170px;
 }
 .about h1{
     font-size: 30px;
@@ -289,8 +299,7 @@ a {
     border-radius: 6px;
 }
 .about-card{
-    width: 75%;
-    margin: 0 auto;
+    margin-left: auto;
 }
 .card-container h3 {
 	margin: 10px 0;
@@ -371,13 +380,21 @@ form{
     display: inline-block;
 }
 .organizer{
-        width: 100%;
-        margin: 10vh auto;
+    width: 100%;
+    margin: 10vh auto;
+}
+.organizer p{
+    font-size: 20px;
+    font-weight: bold;
+    color: silver;
 }
 .organizer h1{
     font-size: 30px;
     font-weight: 1000;
     text-transform: uppercase;
+    
+}
+.organizer h1, .organizer p{
     text-align: center;
     color: #424242;
 }
@@ -386,6 +403,19 @@ form{
     margin-bottom: 20px;
     border: 3px solid #aeaeae2b;
     border-radius: 6px;
+}
+.organizer img{
+    margin-right: 50px;
+    padding: 50px 0 10px 0;
+    filter: drop-shadow(2px 2px 2px gray) sepia(100%);
+    transition: 0.5s;
+}
+.organizer img:hover{
+    filter: none;
+}
+.organizer .container{
+    display: table;
+    margin: 0 auto;
 }
 @keyframes float {
     50% {
@@ -415,6 +445,22 @@ form{
   }
 
 @media all and (max-width: 1000px){
+    .card-container{
+        width: 40%;
+    }
+    .card-container:nth-child(4){
+        margin-left: 10px;
+    }
+    .card-container:last-child{
+        margin-left: 22vw;
+    }
+    .about h1{
+        width: 85%;
+        text-align: center;
+    }
+    .about hr{
+        margin-left: 32.5%;
+    }
     .poster{
         display: none;
         }
@@ -466,14 +512,42 @@ form{
     .mid .container .card {
         width: 95%;
     }
+    .member{
+        width: 100%;
+        margin: 0 7vw;
+    }
+    .organizer img{
+        display: block;
+        padding: 50px 0 10px 0;
+        filter: drop-shadow(2px 2px 2px gray) sepia(100%);
+        margin: 0 auto;
+        transition: 0.5s;
+    }
+    .organizer img:first-child{
+        margin-left: 35vw;
+    }
 }
-@media all and (max-width: 670px){
+@media all and (max-width: 736px){
     .menu-icon{
         color: white;
         float: right;
         font-size: 25px !important;
         padding: 21px 50px;
         display: block !important;
+    }
+    .card-container{
+        width: 85%;
+        margin: 10px auto;
+    }
+    .card-container:nth-child(4){
+        margin-left: 0;
+    }
+    .card-container:last-child{
+        margin-left: 0;
+    }
+    .about h1{
+        width: 90%;
+        text-align: center;
     }
     .poster{
         display: none;
@@ -516,5 +590,7 @@ form{
     }
     .mid .container .card {
         margin: 0 0 25px 5vw;
+    }.organizer img:first-child{
+        margin-left: auto;
     }
 }
