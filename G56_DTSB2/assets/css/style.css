@@ -523,9 +523,6 @@ form{
         margin: 0 auto;
         transition: 0.5s;
     }
-    .organizer img:first-child{
-        margin-left: 35vw;
-    }
 }
 @media all and (max-width: 736px){
     .menu-icon{
