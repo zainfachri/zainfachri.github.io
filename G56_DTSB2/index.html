@@ -11,13 +11,13 @@
   <title>Welcome!</title>
 </head>
 <body>
-
-  <header>
-      <div class="container">
+    <header id="myHeader">
+      <div class="container ">
         <div class="header-left">
           <h2>G56 - DTSB2</h2>
         </div>
-        <span class="fa fa-bars menu-icon"></span>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <span class="fa fa-bars menu-icon"></span></a>
         <div class="header-right">
           <a href="#pelajaran">Pelajaran</a>
           <a href="#anggota">Anggota</a>
@@ -222,5 +222,20 @@
           </p>
         </div>
     </footer>
+
+    <script>
+        window.onscroll = function() {myFunction()};
+        
+        var header = document.getElementById("myHeader");
+        var sticky = header.offsetTop;
+        
+        function myFunction() {
+          if (window.pageYOffset > sticky) {
+            header.classList.add("sticky");
+          } else {
+            header.classList.remove("sticky");
+          }
+        }
+        </script>
 </body>
 </html>

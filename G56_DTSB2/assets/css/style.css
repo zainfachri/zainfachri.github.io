@@ -26,7 +26,6 @@ body {
 header {
     height: 65px;
     width: 100%;
-    background-color: rgba(34, 49, 52, 0.9);
     position :fixed;
     top: 0;
     z-index: 10;
@@ -443,7 +442,13 @@ form{
   footer a:hover {
     color: #FF5722;
   }
-
+  .sticky {
+    position: fixed;
+    background-color: rgba(34, 49, 52, 0.9);
+    top: 0;
+    width: 100%;
+    transition: 0.6s;
+  }
 @media all and (max-width: 1000px){
     .card-container{
         width: 40%;
