@@ -14,6 +14,8 @@
     border: none;
     padding: 0 20px;
     box-sizing: border-box;
+    border-radius: 6px;
+    box-shadow: 0px 5px 5px silver;
 }
 .calculator-keys{
     width: 100%;
@@ -21,14 +23,27 @@
 .row{
     display: flex;
 }
+.all-clear{
+    background-color: rgb(126, 41, 41);
+    color: rgb(219, 219, 80);
+}
+.all-clear:hover{
+    background-color: rgb(99, 24, 24);
+}
 button{
     height: 80px;
     background-color: gray;
-    border: 1px solid black;
+    border: none;
     font-size: 32px;
     color: #fff;
     width: 25%;
     outline: none;
+    border-radius: 10px;
+    margin: 2px;
+    box-shadow: -1px 2px 5px 1px silver;
+}
+button:active{
+    box-shadow: none;
 }
 .all-clear, .zero-btn{
     width: 50%;
